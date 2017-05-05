@@ -5,6 +5,7 @@
     <!--<title>中国主要城市空气质量状况</title>-->
 </head>
 <body>
+
 <div class="head-content">
     <div class="head-content-inner">
         <h1>中国主要城市空气质量状况</h1>
@@ -19,10 +20,11 @@
             from
             <a href="#">pm25.in</a></p>
     </div>
+    <!--第一块内容-->
     <div class="first-content">
         <h3>概况 : 今天哪里又爆表了？</h3>
-        <ul>
-            <li class="first-content-head"><a href="#">AQI<br/>(空气质量)</a></li>
+        <ul class="cat-title-list">
+            <li><a href="#" class="cat-active-list">AQI<br/>(空气质量)</a></li>
             <li><a href="#">PM2.5<br/>(细颗粒物)</a></li>
             <li><a href="#">PM10<br/>(可吸入颗粒物)</a></li>
             <li><a href="#">CO<br/>(一氧化碳)</a></li>
@@ -52,13 +54,33 @@
             </div>
         </div>
     </div>
+    <!--第二块内容-->
     <div class="top-middle-content">
         <h3>重点城市对比</h3>
         <div class="top-middle-content-bottom"></div>
-        <div class="lower-middle-content">
-            <h4>“PM2.5 vs 经济 vs 人口” 关联分析</h4>
-        </div>
+    </div>
+    <!--第三块内容-->
+    <div class="lower-middle-content">
+        <h4>“PM2.5 vs 经济 vs 人口” 关联分析</h4>
+        <div class="lower-middle-content-left"></div><!--这地方应该是个li标签-->
+        <div class="lower-middle-content-center"></div>
+        <div class="lower-middle-content-right"></div>
+    </div>
+    <!--第四块内容-->
+    <div class="last-content">
+    <h3>空气质量排行榜</h3>
+        <ul>
+            <li class="last-content-head"><a href="#">AQI<br/>(空气质量)</a></li>
+            <li><a href="#">PM2.5<br/>(细颗粒物)</a></li>
+            <li><a href="#">PM10<br/>(可吸入颗粒物)</a></li>
+            <li><a href="#">CO<br/>(一氧化碳)</a></li>
+            <li><a href="#">NO2<br/>(二氧化氮)</a></li>
+            <li><a href="#">O3<br/>(臭氧)</a></li>
+            <li><a href="#">SO2<br/>(二氧化硫)</a></li>
+        </ul>
+        <div class="last-content-introduction"></div>
     </div>
 </div>
+<script src="./js/airQuality.js"></script>
 </body>
 </html>
