@@ -2,6 +2,7 @@
 <head>
     <meta http-equiv="content-type" content="text/css" charset="UTF-8">
     <link rel="stylesheet" href="./css/airQuality.css">
+    <script src="//lib.baomitu.com/echarts/3.5.4/echarts.js"></script>
     <!--<title>中国主要城市空气质量状况</title>-->
 </head>
 <body>
@@ -23,34 +24,26 @@
     <!--第一块内容-->
     <div class="first-content">
         <h3>概况 : 今天哪里又爆表了？</h3>
-        <ul class="cat-title-list">
-            <li><a href="#" class="cat-active-list">AQI<br/>(空气质量)</a></li>
-            <li><a href="#">PM2.5<br/>(细颗粒物)</a></li>
-            <li><a href="#">PM10<br/>(可吸入颗粒物)</a></li>
-            <li><a href="#">CO<br/>(一氧化碳)</a></li>
-            <li><a href="#">NO2<br/>(二氧化氮)</a></li>
-            <li><a href="#">O3<br/>(臭氧)</a></li>
-            <li><a href="#">SO2<br/>(二氧化硫)</a></li>
+        <ul class="cat-title-list display-content">
+            <li><a data-index="0" data-pp="123" href="javascript:(void 0)" class="cat-active-list">AQI<br/>(空气质量)</a>
+            </li>
+            <li><a data-index="1" href="javascript:(void 0)">PM2.5<br/>(细颗粒物)</a></li>
+            <li><a data-index="2" href="javascript:(void 0)">PM10<br/>(可吸入颗粒物)</a></li>
+            <li><a data-index="3" href="javascript:(void 0)">CO<br/>(一氧化碳)</a></li>
+            <li><a data-index="4" href="javascript:(void 0)">NO2<br/>(二氧化氮)</a></li>
+            <li><a data-index="5" href="javascript:(void 0)">O3<br/>(臭氧)</a></li>
+            <li><a data-index="6" href="javascript:(void 0)">SO2<br/>(二氧化硫)</a></li>
         </ul>
         <div class="first-content-introduction">
             <div class="first-content-right">
-                <h4>AQI(空气质量指数)</h4>
+                <h4 class="air-title-content"></h4>
                 <hr>
-                <p>空气质量指数（Air Quality Index，简称AQI）定义为定量描述空气质量状况的无量纲指数，
-                    其数值越大说明空气污染状况越严重，对人体健康的危害也就越大。
-                    参与空气质量评价的主要污染物为细颗粒物（pm2.5）、可吸入颗粒物（pm10）、二氧化硫（SO2）、
-                    二氧化氮（NO2）、臭氧（O3）、一氧化碳（CO）等六项。
-                    <br>
-                    <br>
-                    2012年上半年出台规定，将用空气质量指数（AQI）替代原有的空气污染指数（API）。
-                    AQI共分六级，从一级优，二级良，三级轻度污染，四级中度污染，直至五级重度污染，六级严重污染。
-                    当PM2.5日均值浓度达到150微克/立方米时，AQI即达到200；当PM2.5日均浓度达到250微克/立方米时，
-                    AQI即达300；PM2.5日均浓度达到500微克/立方米时，对应的AQI指数达到500。
+                <p class="air-details-content">
                 </p>
                 <p class="first-content-bottom">更多详见 <a href="#">百度百科 <<</a></p>
             </div>
             <div class="first-content-left">
-                <h3>空气质量</h3>
+                <!--<h3>空气质量</h3>-->
             </div>
         </div>
     </div>
@@ -68,19 +61,24 @@
     </div>
     <!--第四块内容-->
     <div class="last-content">
-    <h3>空气质量排行榜</h3>
-        <ul>
-            <li class="last-content-head"><a href="#">AQI<br/>(空气质量)</a></li>
-            <li><a href="#">PM2.5<br/>(细颗粒物)</a></li>
-            <li><a href="#">PM10<br/>(可吸入颗粒物)</a></li>
-            <li><a href="#">CO<br/>(一氧化碳)</a></li>
-            <li><a href="#">NO2<br/>(二氧化氮)</a></li>
-            <li><a href="#">O3<br/>(臭氧)</a></li>
-            <li><a href="#">SO2<br/>(二氧化硫)</a></li>
+        <h3>空气质量排行榜</h3>
+        <ul class="cat-another-title-list">
+            <li><a data-index="0" href="javascript:(void 0)" class="last-content-head">AQI<br/>(空气质量)</a></li>
+            <li><a data-index="1" href="javascript:(void 0)">PM2.5<br/>(细颗粒物)</a></li>
+            <li><a data-index="2" href="javascript:(void 0)">PM10<br/>(可吸入颗粒物)</a></li>
+            <li><a data-index="3" href="javascript:(void 0)">CO<br/>(一氧化碳)</a></li>
+            <li><a data-index="4" href="javascript:(void 0)">NO2<br/>(二氧化氮)</a></li>
+            <li><a data-index="5" href="javascript:(void 0)">O3<br/>(臭氧)</a></li>
+            <li><a data-index="6" href="javascript:(void 0)">SO2<br/>(二氧化硫)</a></li>
         </ul>
         <div class="last-content-introduction"></div>
     </div>
+    <!--底部内容-->
+    <div class="bottom-footer-content">
+        <p>© 2014<a href="#"> 大佛</a>（百度） ·<a href="#"> 林峰</a>（百度） 特别鸣谢 <a href="#">PM25.in · iconpng</a></p>
+    </div>
 </div>
 <script src="./js/airQuality.js"></script>
+<script src="./js/airEcharts.js"></script>
 </body>
 </html>

@@ -129,12 +129,13 @@ body {
 .first-content-right {
     float: right;
     width: 300px;
+    height: 100%;
 }
 
 .first-content-left {
-    background-color: #f12;
+    /*background-color: #f12;*/
     width: 600px;
-    height: 100%;
+    height: 550px;
     float: left;
 }
 
@@ -166,6 +167,10 @@ body {
     font-size: 14px;
     margin: 0 0 10px;
     text-align: right;
+}
+
+.first-content-bottom a {
+    text-decoration: none;
 }
 
 .top-middle-content {
@@ -220,27 +225,27 @@ body {
     background-color: #ddd;
 }
 
-
-.last-content{
+.last-content {
     width: 960px;
     height: 700px;
     margin: 0 auto;
+    border-top: 1px solid transparent;
 }
-.last-content h3{
+
+.last-content h3 {
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
 }
+
 .last-content ul {
     overflow: hidden;
     padding-left: 0;
     margin: 0;
 }
 
-
 .last-content li {
-    border-bottom: 1px solid #eee;
     list-style-type: none;
     float: left;
     box-sizing: border-box;
@@ -250,6 +255,7 @@ body {
 .last-content li a {
     border-radius: 4px 4px 0 0;
     display: block;
+    border-bottom: 1px solid #ddd;
     margin-right: 0;
     margin-bottom: 0;
     text-align: center;
@@ -260,10 +266,14 @@ body {
     height: 82px;
 }
 
-.last-content li.last-content-head {
-    border-top: 1px solid #dddddd;
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
+.cat-another-title-list {
+
+}
+
+.last-content a.last-content-head {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
     border-bottom: transparent;
 }
 
@@ -271,11 +281,35 @@ body {
     color: #2a6496;
     background-color: #ddd;
 }
+
 .last-content-introduction {
     padding: 20px;
     box-sizing: border-box;
     width: 960px;
-    border: 1px solid #dddddd;
+    height: 500px;
+    border: 1px solid #ddd;
     border-top: 0;
     font-size: 14px;
+}
+
+.bottom-footer-content {
+    height: 100px;
+    background-image: url(../images/tweed.png);
+    font-size: 14px;
+    color: #CCC;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.bottom-footer-content p {
+    margin: 0 0 10px 0;
+}
+
+.bottom-footer-content p a {
+    color: #428bca;
+}
+
+.bottom-footer-content p a:hover {
+    color: #adff2f;
 }
