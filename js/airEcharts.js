@@ -86,14 +86,14 @@ function getDetailData(url, callback) {
 //调用函数
 getDetailData('./data/china.json', function (data) {
 
-    // console.log(data);
+     // console.log(data);
     var obtainContent = JSON.parse(data.response);
     echarts.registerMap('china', obtainContent);
 
     //ajax请求数据
     getDetailData('./data/air-quality.json', function (data) {
         airAllData = JSON.parse(data.response);//获取所有数据
-       // console.log(airAllData)
+        //console.log(airAllData);
         var array = [];
         var airData = JSON.parse(data.response);
         for (var i = 0; i < airData.length; i++) {
